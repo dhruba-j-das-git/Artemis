@@ -1,0 +1,5 @@
+<Frame defaultPage="main-page">
+    <Frame.actionBar>
+        <ActionBar title="Artemis - Pet Matching" />
+    </Frame.actionBar>
+</Frame>

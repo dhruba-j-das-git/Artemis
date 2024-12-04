@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pet-card {
+  elevation: 4;
+  border-radius: 8;
+}
+
+.action-button {
+  width: 60;
+  height: 60;
+  border-radius: 30;
+  margin: 10;
+}

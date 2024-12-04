@@ -1,0 +1,15 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd">
+  <StackLayout class="pet-card p-4 bg-white rounded-lg shadow-md m-2">
+    <Image src="{{ imageUrl }}" class="w-full h-64 rounded-lg" stretch="aspectFill" />
+    <StackLayout class="p-2">
+      <Label text="{{ name }}" class="text-xl font-bold" />
+      <Label text="{{ breed }}" class="text-gray-600" />
+      <Label text="{{ age }} years old" class="text-gray-500" />
+      <Label text="{{ location.city }}, {{ location.country }}" class="text-gray-500" />
+    </StackLayout>
+    <FlexboxLayout class="justify-center space-x-4 mt-4">
+      <Button text="❌" tap="{{ onReject }}" class="w-16 h-16 rounded-full bg-red-500 text-white" />
+      <Button text="💖" tap="{{ onLike }}" class="w-16 h-16 rounded-full bg-green-500 text-white" />
+    </FlexboxLayout>
+  </StackLayout>
+</Page>

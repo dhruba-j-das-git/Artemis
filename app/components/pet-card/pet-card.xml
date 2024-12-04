@@ -1,0 +1,15 @@
+<GridLayout rows="auto" columns="*" class="pet-card m-2">
+    <StackLayout class="p-4 bg-white rounded-lg">
+        <Image src="{{ pet.imageUrl }}" class="w-full h-64 rounded-lg" stretch="aspectFill" />
+        <StackLayout class="p-2">
+            <Label text="{{ pet.name }}" class="text-xl font-bold" />
+            <Label text="{{ pet.breed }}" class="text-gray-600" />
+            <Label text="{{ pet.age }} years old" class="text-gray-500" />
+            <Label text="{{ pet.location.city }}, {{ pet.location.country }}" class="text-gray-500" />
+        </StackLayout>
+        <FlexboxLayout class="justify-center space-x-4 mt-4">
+            <Button text="❌" tap="{{ onReject }}" class="action-button bg-red-500 text-white" />
+            <Button text="💖" tap="{{ onLike }}" class="action-button bg-green-500 text-white" />
+        </FlexboxLayout>
+    </StackLayout>
+</GridLayout>

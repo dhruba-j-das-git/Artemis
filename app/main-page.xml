@@ -1,0 +1,15 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo">
+    <ActionBar title="Artemis - Pet Matching" icon="" />
+    
+    <StackLayout class="p-4">
+        <Button text="Add Your Pet" tap="{{ onAddPet }}" class="bg-purple-500 text-white p-4 rounded-lg mb-4" />
+        
+        <GridLayout rows="*" columns="*" class="flex-1">
+            <ListView items="{{ potentialMatches }}" class="flex-1">
+                <ListView.itemTemplate>
+                    <pet-card />
+                </ListView.itemTemplate>
+            </ListView>
+        </GridLayout>
+    </StackLayout>
+</Page>
